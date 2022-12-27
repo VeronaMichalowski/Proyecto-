@@ -2,9 +2,12 @@
 
 include('consulta.php');
 
+
+if ($_SERVER['REQUEST_METHOD']=='POST'){
 $dbname = 'clientes';
 $user='root';
 $password='';
+
 
 try {
     
@@ -34,7 +37,7 @@ $stmt->bindValue(':email', $email);
 
 
 $stmt->execute();
-
+}
 
 ?>
 
@@ -80,7 +83,7 @@ $stmt->execute();
                     </form>
                     <form method="post" action="borrar.php">
                         <input type="hidden" name="id" value="<?= $values['id'] ?>" />
-                        <button type="submit" class="btn btn-info" style="margin-left: 10px;"id="boton_b">Delete</button>
+                        <button type="submit" class="btn btn-info" style="margin-left: 10px;" id="boton_b">Delete</button>
                     </form>
                 </div>
                 </td>
@@ -88,6 +91,7 @@ $stmt->execute();
         </table>
     </tbody>
 
+    <script src="./script.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>

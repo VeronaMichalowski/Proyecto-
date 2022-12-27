@@ -1,5 +1,10 @@
 
 <?php
+
+
+include('consulta.php');
+
+if ($_SERVER['REQUEST_METHOD']=='POST'){
 $dbname = 'clientes';
 $user='root';
 $password='';
@@ -15,11 +20,15 @@ try {
     echo $e->getMessage();
     }
     
+    $id = $_POST['id'];
 
-$miConsulta = $dbh->prepare('SELECT * FROM clientes');
-$miConsulta->execute();
+    $miConsulta = $dbh->prepare("SELECT * FROM clientes WHERE id = $id");
 
 
+    $miConsulta->execute();
+    
+    
+}
 
 ?> 
 
@@ -67,7 +76,7 @@ $miConsulta->execute();
             value="<?= $values['id'] ?>">
         </div>
         <button type="submit" class="btn btn-warning" value="Actualizar">Edit</a></button>
-        <?php  }?>    
+        <?php  } ?>  
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

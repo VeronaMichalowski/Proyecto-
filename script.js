@@ -6,3 +6,9 @@ botonmenu.addEventListener("click", () => {
 });
 
 
+const botonborrar = document.getElementById("boton_b");
+botonborrar.addEventListener ("click", () => {
+
+  alert ("Se borrará el usuario")
+
+});

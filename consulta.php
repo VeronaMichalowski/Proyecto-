@@ -14,7 +14,7 @@ try {
 } 
 
 // Prepara SELECT
-$miConsulta = $dbh->prepare('SELECT * FROM clientes;');
+$miConsulta = $dbh->prepare("SELECT * FROM clientes");
 
 
 $miConsulta->execute();

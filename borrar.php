@@ -26,3 +26,4 @@ $stmt->bindValue(':id', $id);
 $stmt->execute(); 
 
 header("Location: usuarios.php");
+
