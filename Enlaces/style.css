@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
-body{
-    background-color: black;
-}
 h1 {
     font-family: 'Bitter', sans-serif;
     font-size: 20px ;
-    text-align: center;
-    color: white;
 }
+
+section{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+

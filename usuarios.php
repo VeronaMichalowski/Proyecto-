@@ -77,6 +77,7 @@ $stmt->execute();
                 <td><?= $values['id']; ?></td>              
                 <td>
                     <div class="botones" style="display:flex">
+                    
                     <form method="post" action="editar.php">
                         <input type="hidden" name="id" value="<?= $values['id'] ?>" />
                         <button type="submit" class="btn btn-warning">Edit</button>
