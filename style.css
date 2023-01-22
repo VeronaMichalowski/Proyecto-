@@ -250,6 +250,7 @@ article p {
 .containergrid {
 margin: auto;
 position: relative;
+
 }
 
 .titulo_img{
@@ -260,6 +261,13 @@ position: relative;
   color: #E900FF;
   text-align: center;
   width: 100%;
+  
+}
+
+h3 a{
+text-decoration: none;
+color: #E900FF;  
+
 }
 
 .titulo_img:before{
@@ -270,7 +278,7 @@ position: relative;
     height: 3px;
     width: 25%;
     left: 45%;
-  
+ 
   }
 
 .galeria_foto {
@@ -503,6 +511,7 @@ h2{
 
 h3{
   font-size: 50px;
+
 }
 
 h4{
@@ -531,6 +540,11 @@ font-size: 25px;
 
 .connect i {
   width: 40px;
+}
+
+.btn.btn-dark{
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 footer a {

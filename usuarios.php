@@ -26,7 +26,7 @@ VALUES ( :name, :username, :password, :email)");
 
 $name = $_POST['name'];
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = md5($_POST['password']);
 $email = $_POST['email'];
 
 

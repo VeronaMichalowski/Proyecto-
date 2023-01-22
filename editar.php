@@ -5,6 +5,7 @@
 include('consulta.php');
 
 if ($_SERVER['REQUEST_METHOD']=='POST'){
+
 $dbname = 'clientes';
 $user='root';
 $password='';
@@ -75,7 +76,7 @@ try {
             <input type="hidden" class="form-control" name="id" style="width: 400px;"
             value="<?= $values['id'] ?>">
         </div>
-        <button type="submit" class="btn btn-warning" value="Actualizar">Edit</a></button>
+        <button type="submit" class="btn btn-warning" value="Actualizar">Edit</button>
         <?php  } ?>  
     </form>
 

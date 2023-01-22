@@ -3,6 +3,7 @@ $dbname = 'clientes';
 $user='root';
 $password='';
 
+
 try {
     
     $dsn = "mysql:host=localhost;dbname=$dbname";
